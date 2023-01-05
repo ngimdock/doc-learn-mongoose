@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { Kitten } from "./schemas/kittens.js";
 
 mongoose.set("strictQuery", false);
 
@@ -11,5 +12,7 @@ async function main() {
 }
 
 async function runInstructions() {
-  console.log("salut les gens");
+  const newKitten = new Kitten({ name: "miaou" });
+
+  console.log({ newKitten });
 }
