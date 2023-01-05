@@ -12,7 +12,12 @@ async function main() {
 }
 
 async function runInstructions() {
-  const newKitten = new Kitten({ name: "miaou" });
+  const newKitten = new Kitten({ name: "miaou5" });
 
-  console.log({ newKitten });
+  await newKitten.save();
+  console.log(newKitten.speak());
+
+  const allKittens = await Kitten.find();
+
+  console.log({ allKittens });
 }
