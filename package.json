@@ -1,0 +1,14 @@
+{
+  "name": "doc-learn-mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "mongoose": "^6.8.2",
+    "nodemon": "^2.0.20"
+  }
+}
